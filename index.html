@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>انضم إلينا مجانا!</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/571a61111a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="splash" id="splash">
+            <div class="animation">
+                <div class="motion motion1"></div>
+                <div class="motion motion2"></div>
+                <div class="motion motion3"></div>
+                <div class="motion motion4"></div>
+                <div class="motion motion5"></div>
+            </div>
+        </div>
+        <div class="container" id="container">
+            <div class="step step1" id="intro">
+                <header>
+                    <div class="progress">
+                        <span data-select="true"><i class="bi bi-check"></i></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="down"><i onclick="intro()" class="bi bi-person"></i></div>
+                </header>
+                <section>
+                    
+                    <span>أنشئ حساب جديدَا مجانَا:</span>
+                    <button onclick="sign_up()">إنشاء حساب</button>
+                    <span>لديك حساب بالفعل؟</span>
+                    <button onclick="login()">تسجيل الدخول</button>
+                    <span>جرب أيضا:</span>
+                    <div class="social_btn">
+                        <button class="btn"><div class="rotate"><i class="bi bi-google"></i></div></i></i></button>
+                        <button class="btn"><div class="rotate"><i class="bi bi-apple"></i></div></i></button>
+                        <button class="btn"><div class="rotate"><i class="bi bi-windows"></i></div></i></button>
+                        <button class="btn"><div class="rotate"><i class="bi bi-facebook"></i></div></i></button>
+                        <button class="btn"><div class="rotate"><i class="bi bi-twitter"></i></div></i></button>
+                        <button class="btn"><div class="rotate"><i class="bi bi-linkedin"></i></div></i></button>
+                    </div>
+                </section>
+            </div>
+            <div class="step step2">
+                <header>
+                    <div class="progress">
+                        <span data-select="true"><i class="bi bi-check"></i></span>
+                        <span data-select="true"><i class="bi bi-check"></i></span>
+                        <span></span>
+                    </div>
+                    <div class="down"><i onclick="intro()" class="bi bi-arrow-left"></i></div>
+                </header>
+                <section>
+                    <div class="emojy-con">
+                        <div class="emojy">
+                            <section class="face">
+                                <div class="eyes">
+                                    <span><aside></aside></span>
+                                    <span><aside></aside></span>
+                                </div>
+                                <div class="mouth">
+                                    <span>
+                                        <article></article>
+                                    </span>
+                                </div>
+                            </section>
+                            <p class="note" id="note">أنا متحمس لبدء الكتابة</p>
+                        </div>
+                    </div>
+                    
+                    <div class="form">
+                        <form action="#">
+                            <div class="item">
+                                <div class="icon"><i class="fa fa-user"></i></div>
+                                <div class="inp col-2">
+                                    <input type="text" onfocus="Focus()" onblur="hide()" title="رجاء اكتب اسمك" placeholder="الاسم الأول" required>
+                                    <input type="text" onfocus="Focus()" onblur="hide()" title="رجاء اكتب اسمك" placeholder="العائلة" style="border-right: 0.7px dashed #00db92"  required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><i class="fa fa-envelope"></i></div>
+                                <div class="inp"><input type="email" onfocus="Focus()" onblur="hide()" title="أدخل بريد إلكتروني صحيح" placeholder="البريد الإلكتروني" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" required><i class="fa fa-check"></i></div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><i class="fa fa-phone"></i></div>
+                                <div class="inp"><input type="tel" onfocus="Focus()" onblur="hide()" placeholder="رقم الهاتف" pattern="[0-9].{10,}" title="الرجاء إدخال 11 رقما" required><i class="fa fa-check"></i></div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><i class="fa fa-user-shield"></i></div>
+                                <div class="inp"><input type="text" onfocus="Focus()" onblur="hide()" placeholder="اسم المستخدم" pattern="[A-Za-z0-9]{3,}" title="بعض الرموز غير مسموح بها" required><i class="fa fa-check"></i></div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><i class="fa fa-lock"></i></div>
+                                <div class="inp"><input type="password" onfocus="Focus()" onblur="hide()" placeholder="كلمة السر" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="حروف إنجليزية فقط، لدواعي الأمان يجب أن تحتوي كلمة السر على حرف كبير وحرف صغير ورموز وأرقام وألا تقل عن 8 خانات" required><i class="fa fa-check"></i></div>
+                            </div>
+                            <div class="item btn">
+                                <div class="icon"><i class="fa fa-check"></i></div>
+                                <div class="inp"><input type="submit" value="إنشاء حساب" required></div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="step step3">
+                <header>
+                    <div class="progress">
+                        <span><i class="bi bi-check"></i></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="down"><i onclick="intro()" class="bi bi-arrow-left"></i></div>
+                </header>
+                <section>
+                    <div class="emogy">EMOJY</div>
+            
+                    <div class="form">
+                        FORM
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
